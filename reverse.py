@@ -20,7 +20,7 @@ def reverse_bykv(text: str) -> str:
     return ''.join(result)
 
 
-if __name__ == '__main__':
+if __name__ == '__main__':  # pragma: no cover
     test1 = 'syka12dadasdsgergr4'
     test2 = 'govonzalupapen1s'
 
