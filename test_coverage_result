@@ -1,8 +1,8 @@
 Name                       Stmts   Miss  Cover
 ----------------------------------------------
 reverse_text\__init__.py       0      0   100%
-reverse_text\reverse.py       19      4    79%
+reverse_text\reverse.py       14      0   100%
 tests\__init__.py              0      0   100%
-tests\test_reverse.py         23      7    70%
+tests\test_reverse.py         23      1    96%
 ----------------------------------------------
-TOTAL                         42     11    74%
+TOTAL                         37      1    97%
