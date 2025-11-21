@@ -1,0 +1,28 @@
+import unittest
+from reverse_text.reverse import reverse_bykv
+
+class TestReverseByKV(unittest.TestCase):
+    def test_reverse_bykv(self):
+        self.assertEqual(reverse_bykv("syka12dadasdsgergr4"),"rgre12gsdsadadakys4")
+        self.assertEqual(reverse_bykv('govonzalupapen1s'),'snepapulaznovo1g')
+        self.assertEqual(reverse_bykv(''),'')
+        self.assertEqual(reverse_bykv("12345"), "12345")
+        self.assertEqual(reverse_bykv("!@#$%"), "!@#$%")
+        self.assertEqual(reverse_bykv("абвг"), "гвба")
+        self.assertEqual(reverse_bykv("AbC"), "CbA")
+        self.assertEqual(reverse_bykv("A! B@ C#"), "C! B@ A#")
+
+    def test_nonstring(self):
+        with self.assertRaises(ValueError):
+            reverse_bykv(123)
+        with self.assertRaises(ValueError):
+            reverse_bykv(1.2)
+        with self.assertRaises(ValueError):
+            reverse_bykv(None)
+        with self.assertRaises(ValueError):
+            reverse_bykv(['a','b'])
+
+
+
+if __name__ == '__main__':
+    unittest.main()
